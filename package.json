@@ -10,6 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@huggingface/inference": "^4.0.6",
+    "alfa-leetcode-api": "^2.0.1",
+    "axios": "^1.10.0",
+    "firebase-admin": "^13.4.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
@@ -23,5 +27,18 @@
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^16.0.0",
     "vite": "^6.3.5"
-  }
+  },
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "main": "eslint.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodleDev/CodleProject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodleDev/CodleProject/issues"
+  },
+  "homepage": "https://github.com/CodleDev/CodleProject#readme"
 }
