@@ -1,0 +1,14 @@
+#root {
+  font-family: "monospace", monospace;
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 100px;
+  background-size: 0%;
+}
+
+h2 {
+  font-size: 30px;
+  background-size: 0%;
+}

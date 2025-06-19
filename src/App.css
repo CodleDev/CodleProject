@@ -1,42 +1,104 @@
+/* reset the page to zero whitespace */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: rgb(149, 220, 255);
+}
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  margin: 0;
+  /* remove or reduce this if you want the blue to hug the edges */
+  padding: 0;
+
+  /* fill 100% of the viewport */
+  height: 100%;
+  width: 100%;
+
+  /* only keep these if you really need to constrain */
+  /* max-width: 1920px;   
+  max-height: 1080px;   */
+
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
+.title {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0 0 -250px;
+  width: 500px;
+  height: 500px;
+  color: azure;
+  text-align: center;
+  padding-top: 100px;
+  background-color: #242424;
+  background-position: 0%;
+  border-radius: 100px;
+}
+
+.spinner1 {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0 0 -250px;
+  background-color: #ff6464;
+  animation: spinner-spin infinite 30s linear;
+  border-radius: 100px;
+}
+
+.spinner2 {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0 0 -250px;
+  background-color: #646cff;
+  animation: spinner-spin infinite 20s linear;
+  border-radius: 100px;
+}
+
+.spinner3 {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0 0 -250px;
+  background-color: #64ff69;
+  animation: spinner-spin infinite 10s linear;
+  border-radius: 100px;
+}
+
+.button {
+  height: 100px;
+  width: 275px;
+  display: inline-block;
+  color: #646cff;
   will-change: filter;
   transition: filter 300ms;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+.button:hover {
+  filter: drop-shadow(0 0 0.5em #73f0ff);
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.button.react:hover {
+  filter: drop-shadow(0 0 0.5em #73f0ff);
 }
 
-@keyframes logo-spin {
+@keyframes spinner-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }

@@ -1,0 +1,7 @@
+.btn-lg {
+  position: relative;
+  bottom: 20px;
+  padding: 10px 100px;
+  font-size: 20px;
+  border-radius: 20px;
+}
